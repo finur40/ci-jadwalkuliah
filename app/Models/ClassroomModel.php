@@ -6,5 +6,4 @@ class ClassroomModel extends Model
 {
     protected $table = 'classrooms';
     protected $allowedFields = ['name', 'capacity', 'type'];
-    protected $useTimestamps = true;
 }

@@ -6,5 +6,4 @@ class ProgramModel extends Model
 {
     protected $table = 'programs';
     protected $allowedFields = ['name', 'department', 'duration'];
-    protected $useTimestamps = true;
 }

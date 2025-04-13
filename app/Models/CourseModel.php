@@ -6,5 +6,4 @@ class CourseModel extends Model
 {
     protected $table = 'courses';
     protected $allowedFields = ['code', 'title', 'sks', 'program_id'];
-    protected $useTimestamps = true;
 }
