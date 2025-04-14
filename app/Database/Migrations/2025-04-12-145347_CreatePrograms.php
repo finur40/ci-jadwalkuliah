@@ -12,7 +12,7 @@ class CreatePrograms extends Migration
             'id'        => ['type' => 'INT', 'auto_increment' => true],
             'name'      => ['type' => 'VARCHAR', 'constraint' => 100],
             'department'=> ['type' => 'VARCHAR', 'constraint' => 100],
-            'duration'  => ['type' => 'VARCHAR', 'constraint' =>10],
+            'academic_level'  => ['type' => 'VARCHAR', 'constraint' =>10],
         ]);
         $this->forge->addPrimaryKey('id', true);
         $this->forge->createTable('programs');
