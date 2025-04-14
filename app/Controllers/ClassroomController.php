@@ -8,12 +8,12 @@ class ClassroomController extends BaseController
     {
         $model = new ClassroomModel();
         $data['classrooms'] = $model->findAll();
-        return view('classrooms/index', $data);
+        return view('classroomsindex', $data);
     }
 
     public function create()
     {
-        return view('classrooms/create');
+        return view('classroomscreate');
     }
 
     public function store()
