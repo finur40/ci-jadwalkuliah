@@ -10,7 +10,7 @@ class ScheduleController extends BaseController
     {
         $model = new ScheduleModel();
         $data['schedules'] = $model->findAll();
-        return view('schedules/index', $data);
+        return view('schedulesindex', $data);
     }
 
     public function create()
@@ -19,7 +19,7 @@ class ScheduleController extends BaseController
         $classroomModel = new ClassroomModel();
         $data['courses'] = $courseModel->findAll();
         $data['classrooms'] = $classroomModel->findAll();
-        return view('schedules/create', $data);
+        return view('schedulescreate', $data);
     }
 
     public function store()
