@@ -5,5 +5,5 @@ use CodeIgniter\Model;
 class ProgramModel extends Model
 {
     protected $table = 'programs';
-    protected $allowedFields = ['name', 'department', 'duration'];
+    protected $allowedFields = ['name', 'department', 'academic_level'];
 }
