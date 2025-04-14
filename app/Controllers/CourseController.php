@@ -9,7 +9,7 @@ class CourseController extends BaseController
     {
         $model = new CourseModel();
         $data['courses'] = $model->findAll();
-        return view('courses/index', $data);
+        return view('coursesindex', $data);
     }
 
     public function create()
