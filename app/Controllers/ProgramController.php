@@ -8,7 +8,7 @@ class ProgramController extends BaseController
     {
         $model = new ProgramModel();
         $data['programs'] = $model->findAll();
-        return view('programs/index', $data);
+        return view('programsindex', $data);
     }
 
     public function create()
